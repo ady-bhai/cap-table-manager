@@ -1,19 +1,16 @@
-# 🎈 Blank app template
+One day hopefully I will need to use a cap table
 
-A simple Streamlit app template for you to modify!
+I used Streamlit because it's so calm for front-end work. (Fake) equity data is handled with names, share classes, and ownership percentages Pandas and stored in memory using st.session_state. 
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+The Dashboard provides a high-level overview of the cap table, displaying equity data in a table and visualizing ownership distribution with a pie chart. You can add new stakeholders by specifying details like share class and shares issued. The Simulate Funding Round page models the impact of issuing new shares on the cap table. Perhaps the most intricate feature is that it recalculates ownership percentages to account for dilution.
 
-### How to run it on your own machine
+Didn't forget about Convertible Notes or SAFEs, which has it's own section on the sidebar if you want to try it out. The Employee Equity page manages employee stock grants with support for vesting schedules.
 
-1. Install the requirements
+As good practice, there's a Timeline page that logs all equity-related events chronologically. Finally, the Export Cap Table page provides functionality to download the cap table as a CSV file for external use.
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+I got to learn a nice intro to VC by understanding the effects of funding rounds, tracking convertible notes and SAFEs, and understanding how dilution impacts stakeholders. 
 
-2. Run the app
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+
+
+
